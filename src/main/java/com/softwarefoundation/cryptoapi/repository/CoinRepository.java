@@ -3,11 +3,9 @@ package com.softwarefoundation.cryptoapi.repository;
 import com.softwarefoundation.cryptoapi.entity.Coin;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-import java.util.Objects;
-
 public class CoinRepository {
 
-    private static String INSERT = "INSERT INTO COIN ( NAME, PRICE, QUANTITY, DATETIME) VALEUS (?,?,?,?)";
+    private static String INSERT = "INSERT INTO TB01_COIN ( NAME, PRICE, QUANTITY, DATETIME) VALEUS (?,?,?,?)";
 
     private JdbcTemplate jdbcTemplate;
 
