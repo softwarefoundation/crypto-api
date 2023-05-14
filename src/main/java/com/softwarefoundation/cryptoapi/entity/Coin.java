@@ -1,6 +1,8 @@
 package com.softwarefoundation.cryptoapi.entity;
 
 
+import lombok.Data;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,7 +13,7 @@ import java.math.BigDecimal;
 import java.sql.Timestamp;
 
 
-
+@Data
 @Entity
 @Table(name = "tb01_coin")
 public class Coin implements Serializable {
